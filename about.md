@@ -8,7 +8,7 @@ show_in_nav: true
 
 Hey,
 
-My name is Matt Brailsford (aka Circuitbeard)
+My name is Matt Brailsford
 
 This site is all about the things I do in my spare time, which usually involves electronics or making in varying senses of the word. If you are into making and hacking, I hope you’ll find the site interesting.
 

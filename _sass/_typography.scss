@@ -4,9 +4,16 @@
     ===============================
 */
 
+@font-face {
+    font-family: 'M41_LOVEBIT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('M41_LOVEBIT'), url('/fonts/m41.woff') format('woff');
+}
+
 html 
 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: ($global-font-size / 16px) * 1em;
     line-height: $global-line-height / $global-font-size;
     letter-spacing: 1px;
@@ -23,7 +30,8 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p
 
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6
 {
-    color: $text-color;
+    font-family: 'M41_LOVEBIT';
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -31,7 +39,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6
 h1,.h1,
 h2,.h2
 {
-    @include font-size(35px, 35px);
+    @include font-size(30px, 40px);
 }
 
 h3,.h3
@@ -47,25 +55,20 @@ h5,.h5
 
 @media screen and (min-width: 48.5em)
 {
-    h1,.h1
-    h2,.h2
-    {
-        @include font-size(48px, 48px);
-    }
 
     h3,.h3
     {
-        @include font-size(25px, 30px);
+        @include font-size(20px, 30px);
     }
 
     h4,.h4
     {
-        @include font-size(20px, 26px);
+        @include font-size(14px, 26px);
     }
 
     h5,.h5
     {
-        @include font-size(16px, 22px);
+        @include font-size(12px, 22px);
     }
 }
 
@@ -76,13 +79,13 @@ p,li
 }
 
 a {
-    color: $brand-color-teal;
+    color: $brand-color-blue;
     text-decoration: none;
 
     @include transition(color .25s ease);
 
     @include hocus {
-        color: darken($brand-color-teal, 10%);
+        color: $brand-color-pink;
     }
 }
 
@@ -93,7 +96,7 @@ ol
 
     & > li:before
     {
-        color: $brand-color-teal;
+        color: $brand-color-blue;
     }
 }
 

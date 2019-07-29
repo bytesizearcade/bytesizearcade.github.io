@@ -1,6 +1,6 @@
-# Circuitbeard Website
+# Bytesize Arcade Website
 
-The code for the circuitbeard website using Github Pages + Jekyll
+The code for the Bytesize Arcade website using Github Pages + Jekyll
 
 ## Useful Snippets
 
