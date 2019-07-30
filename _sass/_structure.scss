@@ -45,24 +45,28 @@ body {
 }
 
 .header__logo {
+    display: inline-block;
+    margin: 10px 0;
     padding-left: $global-spacing-unit-small;
 }
 
 .header__logo object,
-.header__logo img {
-    height: 30px;
+.header__logo img,
+.header__logo svg {
+    height: 40px;
+    width: 45px;
     pointer-events: none;
     vertical-align: middle;
 }
 
 .header__logo-text {
     color: white;
-    font-weight: bold;
+    font-family: 'M41_LOVEBIT';
     text-transform: uppercase;
     vertical-align: middle;
-    padding-left: $global-spacing-unit-xsmall;
+    padding-left: $global-spacing-unit-small;
 
-    @include font-size(25px, $global-spacing-unit-large);
+    @include font-size(18px, 18px);
 }
 
 .nav__toggle {
@@ -78,7 +82,7 @@ body {
 
     @include hocus {
         color: white;
-        background-color: darken($brand-color-teal, 10%);
+        background-color: $brand-color-blue;
     }
 
     .nav__toggle-icon--close {
@@ -102,7 +106,7 @@ body {
     right: -240px;
     width: 240px;
     height: 100%;
-    background: $brand-color-grey-dark url(/img/bg_glitch.png) top left repeat;
+    background: $brand-color-grey-dark;
     color: white;
     text-align: center;
     padding-top: $global-spacing-unit;
@@ -122,6 +126,7 @@ body {
         left: 0;
         right: auto;
         margin-right: 0;
+        background: $brand-color-grey-dark url(/img/bg_glitch.png) top left repeat;
     }
 }
 
@@ -188,9 +193,9 @@ body {
                 background-color: $brand-color-pink;
                 display: block;
                 height: 100%;
-                width: 200px;
+                width: 30px;
                 top:0;
-                left: -200px;
+                left: -30px;
             }
 
             /*
