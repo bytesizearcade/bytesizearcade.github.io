@@ -8,16 +8,18 @@ redirect_from:
 - /2014/09/22/useful-raspberry-pi-commands/
 ---
 
-{% for post in paginator.posts %}
-	<article class="post post--summary">
-		{% if post.masthead %}
-	    <a href="{{ site.baseurl }}{{ post.url }}"><img class="post__img" src="{{ post.masthead }}" alt="" /></a>
-	    {% endif %}
-	    <div class="post__content">
-	        <div class="post__date">{{ post.date | date: "%d.%m.%Y" }}</div>
-	        <h2 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-	    </div>
-	</article>
+	{% for post in paginator.posts %}
+	<a href="{{ site.baseurl }}{{ post.url }}">
+		<article class="post post--summary">
+			{% if post.masthead %}
+			<img class="post__img" src="{{ post.masthead }}" alt="" />
+			{% endif %}
+			<div class="post__content">
+				<div class="post__date">{{ post.date | date: "%d.%m.%Y" }}</div>
+				<h2 class="post__heading">{{ post.title }}</h2>
+			</div>
+		</article>
+	</a>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}

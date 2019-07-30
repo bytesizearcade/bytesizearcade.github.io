@@ -66,11 +66,17 @@
 
 .post__heading {
     text-transform: uppercase;
+}
 
-    a {
-        color: white;
+a .post__heading {
+    color: white;
 
-        @include hocus {
+    @include transition(color .25s ease);
+}
+
+a {
+    @include hocus {
+        .post__heading {
             color: $brand-color-blue;
         }
     }
@@ -89,7 +95,7 @@
         color: $brand-color-grey;
 
         @include hocus {
-            color: $brand-color-teal;
+            color: $brand-color-blue;
         }
     }
 }
